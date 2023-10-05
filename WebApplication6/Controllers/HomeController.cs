@@ -18,6 +18,7 @@ namespace WebApplication6.Controllers
 			_logger = logger;
 		}
 
+		[HttpGet]
 		public IActionResult Index()
 		{
 			return View();
