@@ -14,7 +14,7 @@ namespace WebApplication6.UnitTests
 
 			var controller = new HomeController(logger);
 
-			var result = controller.GetCustomer(0);
+			var result = controller.GetCustomer(1);
 
 			// NotFound 
 			Assert.That(result, Is.TypeOf<NotFound>());
