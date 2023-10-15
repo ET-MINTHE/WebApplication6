@@ -21,7 +21,7 @@ namespace WebApplication6.Controllers
 		[HttpGet]
 		public IActionResult Index()
 		{
-			return View();
+			return View()
 		}
 
 		public IActionResult Privacy()
