@@ -32,9 +32,10 @@ namespace WebApplication6.Controllers
 
 			return new Ok();
 		}
-
+		[HttpGet]
 		public IActionResult Privacy()
 		{
+			// Add  new test
 			return View();
 		}
 
