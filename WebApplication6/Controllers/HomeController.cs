@@ -24,6 +24,15 @@ namespace WebApplication6.Controllers
 			return View();
 		}
 
+		[HttpGet]
+		public ActionResult GetCustomer(int id)
+		{
+			if (id == 0)
+				return new NotFound();
+
+			return new Ok();
+		}
+
 		public IActionResult Privacy()
 		{
 			return View();
@@ -35,4 +44,10 @@ namespace WebApplication6.Controllers
 			return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
 		}
 	}
+
+	public class ActionResult { }
+
+	public class NotFound : ActionResult { }
+
+	public class Ok : ActionResult { }
 }
