@@ -6,7 +6,7 @@
  stages {
   stage('Checkout') {
    steps {
-    git credentialsId: 'minthe-git-id', url: 'https://github.com/ET-MINTHE/WebApplication6.git', branch: 'master'
+    git credentialsId: 'minthe-git-id', url: 'https://github.com/ET-MINTHE/WebApplication6.git', branch: 'main'
    }
   }
   stage('Restore PACKAGES') {
