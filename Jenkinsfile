@@ -6,7 +6,7 @@
  stages {
    stage('hello world') {
    steps {
-   bat 'echo "Hello World"'
+    echo "Hello World"
    }
   }
   stage('Checkout') {
