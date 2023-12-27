@@ -6,10 +6,8 @@
  stages {
    stage('hello world') {
    steps {
-    echo "Hello World"
+    echo 'Hello World'
    }
   }
-  
- 
  }
 }
